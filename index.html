@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechNova | Tienda de Tecnología</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">Tech<span class="logo-accent">Nova</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+        <li><a href="#productos" class="nav-link">Productos</a></li>
+        <li><a href="#ofertas" class="nav-link">Ofertas</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Carrito de compras">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="inicio">
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-content">
+      <div class="hero-badge">🔥 Nuevos lanzamientos 2025</div>
+      <h1 class="hero-title">
+        El Futuro de la<br />
+        <span class="gradient-text">Tecnología</span><br />
+        está aquí
+      </h1>
+      <p class="hero-subtitle">
+        Descubre los últimos gadgets, componentes y accesorios tech al mejor precio.
+        Envío gratis en compras mayores a $100.
+      </p>
+      <div class="hero-actions">
+        <a href="#productos" class="btn btn-primary">
+          <span>Comprar ahora</span>
+          <span class="btn-arrow">→</span>
+        </a>
+        <a href="#ofertas" class="btn btn-outline">Ver Ofertas</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Productos</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">50K+</span><span class="stat-label">Clientes</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">4.9★</span><span class="stat-label">Calificación</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-glow"></div>
+      <div class="floating-card card-1">
+        <span>🎮</span>
+        <span>Gaming Pro</span>
+      </div>
+      <div class="floating-card card-2">
+        <span>💻</span>
+        <span>Ultrabook</span>
+      </div>
+      <div class="floating-card card-3">
+        <span>📱</span>
+        <span>Smartphone</span>
+      </div>
+      <div class="hero-device">
+        <div class="device-screen">
+          <div class="device-content">
+            <div class="device-line"></div>
+            <div class="device-line short"></div>
+            <div class="device-grid">
+              <div class="device-item">📱</div>
+              <div class="device-item">💻</div>
+              <div class="device-item">⌚</div>
+              <div class="device-item">🎮</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCTOS ========== -->
+  <section class="products" id="productos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Catálogo</span>
+        <h2 class="section-title">Nuestros <span class="gradient-text">Productos</span></h2>
+        <p class="section-desc">Tecnología de punta seleccionada para ti</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="laptop">Laptops</button>
+        <button class="filter-btn" data-filter="phone">Teléfonos</button>
+        <button class="filter-btn" data-filter="gaming">Gaming</button>
+        <button class="filter-btn" data-filter="audio">Audio</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+
+        <!-- Producto 1 -->
+        <div class="product-card" data-category="laptop">
+          <div class="product-badge">Nuevo</div>
+          <div class="product-img">
+            <div class="product-emoji">💻</div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Laptop</span>
+            <h3 class="product-name">UltraBook Pro 15</h3>
+            <p class="product-desc">Intel i9, 32GB RAM, 1TB SSD, RTX 4070</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">$1,299</span>
+                <span class="price-old">$1,599</span>
+              </div>
+              <button class="btn-cart" data-name="UltraBook Pro 15" data-price="1299">
+                <span>+ Carrito</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product-card" data-category="phone">
+          <div class="product-badge sale">Oferta</div>
+          <div class="product-img">
+            <div class="product-emoji">📱</div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Smartphone</span>
+            <h3 class="product-name">NovaPad X12 Ultra</h3>
+            <p class="product-desc">6.7" AMOLED, 200MP, 5G, 5000mAh</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">$899</span>
+                <span class="price-old">$1,099</span>
+              </div>
+              <button class="btn-cart" data-name="NovaPad X12 Ultra" data-price="899">
+                <span>+ Carrito</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product-card" data-category="gaming">
+          <div class="product-badge hot">Hot</div>
+          <div class="product-img">
+            <div class="product-emoji">🎮</div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Gaming</span>
+            <h3 class="product-name">GameStation Pro</h3>
+            <p class="product-desc">Consola 4K, 2TB, 120fps, WiFi 6</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">$499</span>
+                <span class="price-old">$599</span>
+              </div>
+              <button class="btn-cart" data-name="GameStation Pro" data-price="499">
+                <span>+ Carrito</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="product-card" data-category="audio">
+          <div class="product-img">
+            <div class="product-emoji">🎧</div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Audio</span>
+            <h3 class="product-name">SoundNova ANC Pro</h3>
+            <p class="product-desc">Cancelación activa, 40h batería, Hi-Fi</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">$249</span>
+                <span class="price-old">$349</span>
+              </div>
+              <button class="btn-cart" data-name="SoundNova ANC Pro" data-price="249">
+                <span>+ Carrito</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="product-card" data-category="laptop">
+          <div class="product-badge">Gaming</div>
+          <div class="product-img">
+            <div class="product-emoji">🖥️</div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Monitor</span>
+            <h3 class="product-name">QuantumDisplay 27"</h3>
+            <p class="product-desc">4K 165Hz, IPS, HDR400, 1ms, G-Sync</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">$549</span>
+                <span class="price-old">$699</span>
+              </div>
+              <button class="btn-cart" data-name="QuantumDisplay 27" data-price="549">
+                <span>+ Carrito</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="product-card" data-category="phone">
+          <div class="product-badge sale">-30%</div>
+          <div class="product-img">
+            <div class="product-emoji">⌚</div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Wearable</span>
+            <h3 class="product-name">SmartWatch Elite S3</h3>
+            <p class="product-desc">GPS, ECG, AMOLED, 7 días batería, IP68</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">$199</span>
+                <span class="price-old">$289</span>
+              </div>
+              <button class="btn-cart" data-name="SmartWatch Elite S3" data-price="199">
+                <span>+ Carrito</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 7 -->
+        <div class="product-card" data-category="gaming">
+          <div class="product-img">
+            <div class="product-emoji">⌨️</div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Gaming</span>
+            <h3 class="product-name">MechForce RGB TKL</h3>
+            <p class="product-desc">Switches ópticos, RGB per-key, Anti-ghosting</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">$129</span>
+                <span class="price-old">$179</span>
+              </div>
+              <button class="btn-cart" data-name="MechForce RGB TKL" data-price="129">
+                <span>+ Carrito</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 8 -->
+        <div class="product-card" data-category="audio">
+          <div class="product-badge hot">Popular</div>
+          <div class="product-img">
+            <div class="product-emoji">🔊</div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Audio</span>
+            <h3 class="product-name">BassCore 360 TWS</h3>
+            <p class="product-desc">Earbuds, ANC, 32h total, IPX5, LDAC</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">$89</span>
+                <span class="price-old">$129</span>
+              </div>
+              <button class="btn-cart" data-name="BassCore 360 TWS" data-price="89">
+                <span>+ Carrito</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== OFERTAS ========== -->
+  <section class="offers" id="ofertas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">🔥 Limitado</span>
+        <h2 class="section-title">Ofertas <span class="gradient-text">Destacadas</span></h2>
+        <p class="section-desc">Hasta 40% de descuento por tiempo limitado</p>
+      </div>
+
+      <div class="offers-grid">
+        <div class="offer-card offer-main">
+          <div class="offer-tag">MEGA OFERTA</div>
+          <div class="offer-emoji">💻</div>
+          <div class="offer-content">
+            <h3>Laptop Gaming Beast X1</h3>
+            <p>RTX 4080, i9-13900H, 64GB RAM, 2TB NVMe</p>
+            <div class="offer-price">
+              <span class="offer-new">$1,799</span>
+              <span class="offer-old">$2,499</span>
+              <span class="offer-save">Ahorras $700</span>
+            </div>
+            <button class="btn btn-primary" onclick="addToCartDirect('Laptop Gaming Beast X1', 1799)">
+              Comprar ahora →
+            </button>
+          </div>
+          <div class="offer-timer" id="offerTimer">
+            <span class="timer-label">Termina en:</span>
+            <div class="timer-blocks">
+              <div class="timer-block"><span id="tHours">00</span><small>Hrs</small></div>
+              <div class="timer-sep">:</div>
+              <div class="timer-block"><span id="tMins">00</span><small>Min</small></div>
+              <div class="timer-sep">:</div>
+              <div class="timer-block"><span id="tSecs">00</span><small>Seg</small></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="offers-side">
+          <div class="offer-card offer-sm">
+            <div class="offer-emoji-sm">📱</div>
+            <div>
+              <div class="offer-tag-sm">25% OFF</div>
+              <h4>Tableta ProView 12</h4>
+              <p>M2 chip, 12.9", Liquid Retina</p>
+              <div class="offer-price-sm">
+                <span class="offer-new-sm">$749</span>
+                <span class="offer-old-sm">$999</span>
+              </div>
+              <button class="btn-sm-cart" onclick="addToCartDirect('Tableta ProView 12', 749)">+ Carrito</button>
+            </div>
+          </div>
+          <div class="offer-card offer-sm">
+            <div class="offer-emoji-sm">🎮</div>
+            <div>
+              <div class="offer-tag-sm">35% OFF</div>
+              <h4>VR Headset Immerse X</h4>
+              <p>4K por ojo, 120Hz, tracking 6DoF</p>
+              <div class="offer-price-sm">
+                <span class="offer-new-sm">$449</span>
+                <span class="offer-old-sm">$699</span>
+              </div>
+              <button class="btn-sm-cart" onclick="addToCartDirect('VR Headset Immerse X', 449)">+ Carrito</button>
+            </div>
+          </div>
+          <div class="offer-card offer-sm">
+            <div class="offer-emoji-sm">🔌</div>
+            <div>
+              <div class="offer-tag-sm">40% OFF</div>
+              <h4>Hub USB-C Ultra 12en1</h4>
+              <p>Thunderbolt 4, 8K, 100W PD, SD</p>
+              <div class="offer-price-sm">
+                <span class="offer-new-sm">$59</span>
+                <span class="offer-old-sm">$99</span>
+              </div>
+              <button class="btn-sm-cart" onclick="addToCartDirect('Hub USB-C Ultra', 59)">+ Carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section class="contact" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contáctanos</span>
+        <h2 class="section-title">¿Tienes <span class="gradient-text">preguntas?</span></h2>
+        <p class="section-desc">Nuestro equipo te responde en menos de 24 horas</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Dirección</strong>
+              <p>Pontifica Universidad Catolica del Ecuador </p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <p>technova@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>Teléfono</strong>
+              <p>+593 098 378 8859</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🕐</span>
+            <div>
+              <strong>Horario</strong>
+              <p>Lun–Sáb: 9:00am – 8:00pm</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" autocomplete="off" />
+              <span class="form-error" id="errorNombre"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="juan@email.com" autocomplete="off" />
+              <span class="form-error" id="errorEmail"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="5551234567" autocomplete="off" />
+            <span class="form-error" id="errorTelefono"></span>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿En qué podemos ayudarte?"></textarea>
+            <span class="form-error" id="errorMensaje"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Enviar mensaje</span>
+            <span>🚀</span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <span>✅</span>
+            <span>¡Mensaje enviado! Te contactaremos pronto.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="nav-logo">
+            <span class="logo-icon">⚡</span>
+            <span class="logo-text">Tech<span class="logo-accent">Nova</span></span>
+          </a>
+          <p>Tu destino tech de confianza. Calidad, innovación y el mejor precio del mercado.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Tienda</h4>
+          <ul>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#ofertas">Ofertas</a></li>
+            <li><a href="#">Marcas</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Soporte</h4>
+          <ul>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#">Garantía</a></li>
+            <li><a href="#">Envíos</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Síguenos</h4>
+          <div class="social-links">
+            <a href="#" class="social-btn">𝕏</a>
+            <a href="#" class="social-btn">in</a>
+            <a href="#" class="social-btn">▶</a>
+            <a href="#" class="social-btn">📸</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 TechNova. Todos los derechos reservados.</p>
+        <p>Hecho con ⚡ y mucha tecnología</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== CART MODAL ========== -->
+  <div class="cart-overlay" id="cartOverlay">
+    <div class="cart-modal">
+      <div class="cart-header">
+        <h3>🛒 Mi Carrito</h3>
+        <button class="cart-close" id="cartClose">✕</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <div class="cart-empty">Tu carrito está vacío</div>
+      </div>
+      <div class="cart-footer" id="cartFooter" style="display:none">
+        <div class="cart-total">
+          Total: <strong id="cartTotal">$0</strong>
+        </div>
+        <button class="btn btn-primary btn-full" id="checkoutBtn">Proceder al pago →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== TOAST ========== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="index.js" defer></script>
+</body>
+</html>
